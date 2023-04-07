@@ -1,0 +1,72 @@
+package JavaProgramlama;
+
+import java.util.Scanner;
+
+public class HesapMakinesi2 {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        double sayi1, sayi2 = 0, sonuc = 0;
+        char islem;
+        
+        //MUSTAFA KOÇYİĞİT
+        
+        System.out.println("**** HESAP MAKİNESİ ****");
+
+        while (true) {
+            System.out.print("\nYapmak istediğiniz işlemi seçin (+, -, *, /, !) \nveya çıkmak için 'e' tuşuna basın: ");
+            islem = scanner.next().charAt(0);
+
+            if (islem == 'e') {
+                System.out.println("\nİşlem sonlandırıldı...");
+                break;
+            }
+
+            System.out.print("İlk sayıyı girin: ");
+            sayi1 = scanner.nextDouble();
+
+            if (islem != '!') {
+                System.out.print("İkinci sayıyı girin: ");
+                sayi2 = scanner.nextDouble();
+
+                if (sayi2 == 0 && islem == '/') {
+                    while (sayi2 == 0) {
+                        System.out.print("Bölme işleminde ikinci sayı sıfır olamaz, yeni değeri girin: ");
+                        sayi2 = scanner.nextDouble();
+                    }
+                }
+            }
+
+            switch (islem) {
+                case '+':
+                    sonuc = sayi1 + sayi2;
+                    break;
+                case '-':
+                    sonuc = sayi1 - sayi2;
+                    break;
+                case '*':
+                    sonuc = sayi1 * sayi2;
+                    break;
+                case '/':
+                    sonuc = sayi1 / sayi2;
+                    break;
+                case '!':
+                    sonuc = faktoriyel(sayi1);
+                    break;
+                default:
+                    System.out.println("Hatalı işlem yaptınız! Girdiğiniz değerleri kontrol edin!");
+            }
+
+            System.out.println("\nSonuç: " + sonuc);
+        }
+    }
+
+    public static double faktoriyel(double sayi) {
+        double sonuc = 1;
+        for (int i = 1; i <= sayi; i++) {
+            sonuc *= i;
+        }
+        return sonuc;
+    }
+}
