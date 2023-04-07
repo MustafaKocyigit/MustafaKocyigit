@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @MustafaKocyigit
 - 👀 I’m interested in security & internet
-- 🌱 I’m currently learning c,c++,c#
+- 🌱 I’m currently learning c,c++,c#,java
 
 <!---
 MustafaKocyigit/MustafaKocyigit is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
