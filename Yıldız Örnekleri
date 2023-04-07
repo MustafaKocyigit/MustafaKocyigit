@@ -1,0 +1,29 @@
+package ornek;
+
+public class Yeni {
+
+	public static void main(String[] args) {
+		System.out.println("**** Yıldız ****\n");
+		System.out.println("* * * * *");
+		System.out.println(" * * * * *");
+		System.out.println("* * * * *");
+		System.out.println(" * * * * *");
+		System.out.println("* * * * *\n");
+		
+		
+		System.out.println("*** Kare ***\n");
+		System.out.println("* * * * *");
+		System.out.println("*       *");
+		System.out.println("*       *");
+		System.out.println("*       *");
+		System.out.println("* * * * *\n");
+		
+		System.out.println("*** Çöp Adam ***\n");
+		System.out.println("     *");
+		System.out.println(" * *   * *");
+		System.out.println("    * *");
+		System.out.println("   *   *");
+		System.out.println("  *     *");
+	}
+
+}
