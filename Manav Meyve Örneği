@@ -1,0 +1,15 @@
+package JavaProgramlama;
+
+public class Ornek1 {
+
+	public static void main(String[] args) {
+		int nar=10;
+		int elma=500;
+		int armut=120;
+		int toplam=0;
+		toplam=nar+elma+armut;
+		System.out.println("Manavdaki Toplam Meyve: " + toplam);
+		
+	}
+
+}
